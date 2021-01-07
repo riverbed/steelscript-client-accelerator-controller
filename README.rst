@@ -18,6 +18,8 @@ Links
 
 - `SteelScript complete guide <https://support.riverbed.com/apis/steelscript>`__
 
+- `Client Accelerator Controller - Riverbed API reference <https://support.riverbed.com/apis/_products/SteelCentral_Controller_for_SteelHead_Mobile/index.html>`__
+
 License
 =======
 
