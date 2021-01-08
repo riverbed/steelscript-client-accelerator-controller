@@ -7,16 +7,7 @@
 
 """
 This script presents a python example of using Command Line Interface (CLI)
-to show version, networking state, current connections (flows) and bandwidth
-statistics of a SteelHead appliance.
-First of all, the steelhead module needs to be imported, from which the
-SteelHead class is used. An authentication object is created by
-instantiating the UserAuth class with user name and password to access the
-SteelHead appliance. Afterwards, a SteelHead object is created by
-instantiating the SteelHead class with the host name or IP address of the
-SteelHead appliance and the existing authentication object. Then, we can use
-the SteelHead object to execute command on the SteelHead appliance as follows:
-steelhead_object.cli.exec_command("command_to_be_executed").
+to show services and license of a Client Accelerator appliance.
 This example script should be executed as follows:
 cac_rest_api.py <HOST> [-c access_code]
 """
