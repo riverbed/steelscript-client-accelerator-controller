@@ -62,9 +62,11 @@ class ClientAcceleratorControllerCLIApp(Application):
         path = '/api/appliance/1.0.0/status/license'
         content_dict=cacontroller.conn.json_request('GET', path)
         print(content_dict)
-
+        
+        del cacontroller.conn
         del cacontroller
 
 if __name__ == '__main__':
-    logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
+    logging.basicConfig(stream=sys.stdout, level=logging.ERROR)
+    logging.captureWarnings(True)
     ClientAcceleratorControllerCLIApp().run()
