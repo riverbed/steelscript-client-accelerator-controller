@@ -22,9 +22,6 @@ This example script should be executed as follows:
 cac_rest_api.py <HOST> [-c access_code]
 """
 
-from __future__ import (absolute_import, unicode_literals, print_function,
-                        division)
-
 import logging, sys
 from steelscript.common.app import Application
 from steelscript.common.service import OAuth
@@ -48,7 +45,7 @@ class ClientAcceleratorControllerCLIApp(Application):
 
     def main(self):
         
-        cac = Service("appliance", self.options.host, auth=OAuth(self.options.oauth))
+        cac = Service("cac", self.options.host, enable_auth_detection=False,supports_auth_basic=False,supports_auth_oauth=True, auth=OAuth(self.options.oauth))
 
         print("\n********** Services **********\n")
         path = '/api/appliance/1.0.0/services'
